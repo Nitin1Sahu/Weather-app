@@ -32,6 +32,10 @@ async function getWeatherData(cityValue) {
         }).join("")
 
     } catch (error) {
-        weatherDataE1.querySelector('.description').innerHTML = "Enter the Correct City Name!";
+        weatherDataE1.querySelector('.icon').innerHTML = "";
+        weatherDataE1.querySelector('.temperature').textContent = "";
+        weatherDataE1.querySelector('.description').textContent = "Please Enter Correct City Name!";
+        weatherDataE1.querySelector('.details').innerHTML = "";
+
     }
 }
